@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html>
+	<head>
+		<!--script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script-->
+		<!-- JIT Library File -->
+		<script language="javascript" type="text/javascript" SRC='../static/jit.js'></script>
+		<script language="javascript" type="text/javascript" SRC='../static/jquery.min.js'></script>
+	    
+		<!-- CSS Files -->
+		<link type="text/css" href="../static/css/base.css" rel="stylesheet" />
+		<link type="text/css" href="../static/css/RGraph.css" rel="stylesheet" />
+        
+		<title>WikiG</title>
+
+		<!-- Example File -->
+		<!--script type="text/JavaScript" SRC='../static/str.js'></script-->
+		
+				<script type="text/javascript">
+			$(document).ready(function(){
+  		    $("button").click(function(){
+  		                                       
+                            //par=document.input.user.value;
+                            //alert(par);
+                            par="kapil"
+                    	    $.getJSON("/returnjson1/"+par,
+  					        function(data){
+						    init(data);			
+                            });//getjson
+  				});//click
+			});//ready
+		
+		</script>
+		
+	</head>
+	<body>
+	<div id="container">
+		<div id="left-container">
+
+		<div class="text">
+			<h2><b>Graph Animation</b></h2>
+			<!--form><input type="text" name="par" id="par">
+			<input type="submit" value="Submit" />Click me</input>
+			</form-->                       
+			</div> 
+
+			<!--form id="input1">
+            Keyword: <input type="text" name="user" />
+            <input type="submit" value="Rgraph"/></input>
+            </form-->
+            <button>click me</button>
+            
+            <!--form name="input" onsubmit="demo()">
+            Keyword: <input type="text" name="user" />
+            <input type="submit" value="RGRAPH" />
+            </form-->            
+			
+		</div>
+
+		<div id="center-container">
+    		<div id="infovis"></div>    
+		</div>
+		<div id="right-container">
+			<br /><br /><h3><b> PICT </b></h3>
+			<h4>Aamir</h4>
+			<h4>Jesal</h4>
+			<h4>Kapil</h4>
+			<h4>Neville</h4>
+		</div>
+	</div>
+
+	<div id="log"></div>
+		<!--h4>Tree Graph</h4>
+		<button>Click me</button-->
+
+	</body>
+</html>

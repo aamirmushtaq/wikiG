@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+  				$("button").click(function(){
+   				 	$.getJSON("/returnjson",
+  					function(data) {
+  					document.write(data.name);
+  					document.write(data.friends[1].name);
+    					alert(data.name);
+    					alert(data.friends[1].name);
+  					});//func_data
+  				});//getJson
+			});//ready
+		</script>
+	</head>
+
+	<body>
+		<h2>Return JSON</h2>
+		<button>Click me</button>
+	</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <!--script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script-->
+        <!-- JIT Library File -->
+		<script language="javascript" type="text/javascript" SRC='../static/jit.js'></script>
+		<script language="javascript" type="text/javascript" SRC='../static/jquery.min.js'></script>
+		
+		<!-- CSS Files -->
+		<link type="text/css" href="../static/css/base.css" rel="stylesheet" />
+		<link type="text/css" href="../static/css/RGraph.css" rel="stylesheet" />
+		
+		<title>WikiG</title>
+		
+		<!--script type="text/JavaScript" SRC='../static/str.js'></script-->
+        <script type="text/javascript">
+		
+		    $(document).ready(function(){
+		    $.getJSON('/loadgraph', function(data){init(data);});
+		    });
+		    //$.getJSON('/startdemo', function(data){init(data);});
+		    //window.onload = $.getJSON('/startdemo', function(data){init(data);});
+		    /*function runDemo()
+		    {
+		        //var1 = document.form1.articlename.value;
+		        //alert(var1);
+		        var1 = 'Yemen';
+		        alert(var1);
+		        $.getJSON("/returnjson/"+var1, 
+		            function(data){
+		            init(data);
+		            }
+		        );
+		    }*/
+		
+		</script>
+		
+	</head>
+	<body>
+	    <div id="container">
+		    <div id="left-container">
+                <div class="text">
+                    <h2><b>Graph Animation</b></h2>                       
+                </div>
+                
+                <!--form name="form1" action = "startdemo" method="POST">
+                    article name: <input type="text" name="articlename"/>
+                    <input type="submit" value="generate graph"/>
+                </form-->
+                
+                <!--button>click me</button-->
+			
+		    </div>
+
+		    <div id="center-container">
+        		<div id="infovis"></div>    
+		    </div>
+		
+		    <!--div id="right-container">
+			    <br /><br /><h3><b> PICT </b></h3>
+			    <h4>Aamir</h4>
+			    <h4>Jesal</h4>
+			    <h4>Kapil</h4>
+			    <h4>Neville</h4>
+		    </div-->
+	    </div>
+
+	    <div id="log"></div>
+	</body>
+</html>
