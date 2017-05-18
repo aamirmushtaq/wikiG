@@ -1,0 +1,27 @@
+import nltk
+from nltk.book import *
+def count(text1, word):
+	text1.count(word)
+	100 * text1.count(word) / len(text1)
+
+def countunique(text1):
+	for words in set(text1):
+		print(count(text1, words))
+
+
+countunique(text1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

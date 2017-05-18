@@ -1,0 +1,39 @@
+import nltk, sys, re, os, urllib2, threading, time, 
+from nltk import *
+from nltk.corpus import PlaintextCorpusReader, stopwords, swadesh
+import ImplementedFunctions
+from ImplementedFunctions import ImplementedFunctions
+myFunctions = ImplementedFunctions()
+
+urls = ['http://www.google.com/','http://www.lycos.com/','http://www.bing.com/','http://www.altavista.com/','http://achewood.com/']
+myFunctions.threadedattempt(urls)
+myFunctions.getFromDump('Zeus')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+for item in articlenames:
+    filewrite_url = myfunctions.openforwrite(item,'urls')
+    filewrite_keywords = myfunctions.openforwrite(item,'keywords')
+    
